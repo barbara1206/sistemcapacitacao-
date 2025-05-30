@@ -11,11 +11,13 @@ public class Programa {
         isabela.setLotacao("Brasilia");
         isabela.setEmail("isabela@gmail.");
 
+        isabela.setHorasExtras(600);
+        isabela.setSalarioMensal(3000);
+        isabela.calcularNumeros(4,10,8);
         System.out.println("Servidor: "+ isabela.getNome());
+        System.out.printf("Horas extras R$ %.2f: ",isabela.getHorasExtras());
 
-    }
 
 
-        }
     }
 }
