@@ -15,15 +15,6 @@ public class ServidorPublico {
         private String cpf;
         private String lotacao;
         private String email;
-        private double horasExtras;
-
-        public double getHorasExtras() {
-                return horasExtras;
-        }
-
-        public void setHorasExtras(double horasExtras) {
-                this.horasExtras = horasExtras;
-        }
 
         public String getEmail() {
                 return email;
@@ -137,9 +128,13 @@ public class ServidorPublico {
                 this.cpf = cpf;
         }
 
-        public double calcularSalriohorasExtras(double horasTrabalhadas, double valorHora){ no usages new
-         double salarioMensal =  salario * (horasTrabalhadas * valorHora);
-                horasExtras = salarioMnesal;
-                return (salarioMensal);
- }
+        public double calcularNumeros (double...numeros){
+                double soma = 0;
+                for (double numero : numeros) {
+                         soma += numero;
+                }
+
+                System.out.println("A soma dos argumentos informados"+ soma);
+                return soma;
+        }
 }
